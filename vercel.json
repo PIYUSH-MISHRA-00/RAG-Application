@@ -1,27 +1,28 @@
 {
-  \"version\": 2,
-  \"builds\": [
+  "version": 2,
+  "builds": [
     {
-      \"src\": \"package.json\",
-      \"use\": \"@vercel/next\"
+      "src": "package.json",
+      "use": "@vercel/next"
     }
   ],
-  \"env\": {
-    \"OPENAI_API_KEY\": \"@openai-api-key\",
-    \"GROQ_API_KEY\": \"@groq-api-key\",
-    \"PINECONE_API_KEY\": \"@pinecone-api-key\",
-    \"PINECONE_ENVIRONMENT\": \"@pinecone-environment\",
-    \"COHERE_API_KEY\": \"@cohere-api-key\",
-    \"PINECONE_INDEX_NAME\": \"rag-documents\"
+  "env": {
+    "GOOGLE_API_KEY": "@google-api-key",
+    "GROQ_API_KEY": "@groq-api-key",
+    "PINECONE_API_KEY": "@pinecone-api-key",
+    "PINECONE_ENVIRONMENT": "@pinecone-environment",
+    "COHERE_API_KEY": "@cohere-api-key",
+    "PINECONE_INDEX_NAME": "rag-documents"
   },
-  \"build\": {
-    \"env\": {
-      \"NEXT_TELEMETRY_DISABLED\": \"1\"
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
     }
   },
-  \"functions\": {
-    \"src/app/api/**/*.ts\": {
-      \"maxDuration\": 60
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 60
     }
-  }
-}"}, "original_text": "", "replace_all": false}]
+  },
+  "name": "rag-application"
+}
